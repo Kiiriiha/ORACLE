@@ -9,7 +9,7 @@ public class jogador extends personagem {
 	
 	@Override
 public void exibirNome() {
-		System.out.println("Nome: " + this.retornarNome());
+		System.out.println("Personagem " + this.retornarNome());
 	
 }
 

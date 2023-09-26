@@ -9,7 +9,13 @@ public class personagem {
 	 private int velocidade;
 	 private int defesa;
 	 private int nivel;
+	 private racas raca;
 
+	 
+	 public personagem() {
+		 
+	 }
+	 
 	void atacar() {
 		System.out.println("Atacou");
 	}
