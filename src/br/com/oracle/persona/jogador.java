@@ -5,7 +5,7 @@ public class jogador extends personagem {
 	int experienciaAtual;
 	int experienciaProximoNivel;
 
-	
+	public jogador() {}
 	
 	@Override
 public void exibirNome() {
@@ -13,6 +13,18 @@ public void exibirNome() {
 	
 }
 
-
+	@Override
+public void atacar() {
+		
+	}
+	@Override
+	public void defender() {
+		
+	}
+	@Override
+	public void usarMagia() {
+		
+	}
+	
 
 }

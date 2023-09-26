@@ -1,16 +1,25 @@
-package br.com.oracle.persona;
+package br.com.oracle.persona.inimigos;
 
-public class monstro extends personagem{
+import br.com.oracle.persona.personagem;
+import br.com.oracle.persona.racas;
+
+public abstract class Inimigo extends personagem {
 	
 	
 	
-	int experiencia;
+	 private int experiencia;
 	
 //fazer array de loot
 
-	public monstro() { }
+	public Inimigo() { }
 	
-	public monstro(racas raca) {
+	
+	
+	
+	
+	
+	
+	public Inimigo(racas raca) {
 		switch(raca) {
 		case ZUMBI:
 			System.out.println("Raça: Zumbi");
@@ -35,9 +44,8 @@ public class monstro extends personagem{
 		}
 	}
 	
-	@Override
-	public void exibirNome() {
-		System.out.println("Monstro " + this.retornarNome() + " Apareceu");
+
 	}
+
 	
-}
+
