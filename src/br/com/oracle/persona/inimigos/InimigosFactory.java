@@ -1,9 +1,7 @@
 package br.com.oracle.persona.inimigos;
 
-import br.com.oracle.persona.racas;
-
 public class InimigosFactory {
-	public Inimigo retornarNovoInimigo(racas raca) {
+	public static final Inimigo retornarNovoInimigo(RacasEnum raca) {
 		Inimigo retorno = null;
 
 		switch (raca) {

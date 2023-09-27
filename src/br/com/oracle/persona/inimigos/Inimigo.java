@@ -1,9 +1,8 @@
 package br.com.oracle.persona.inimigos;
 
-import br.com.oracle.persona.personagem;
-import br.com.oracle.persona.racas;
+import br.com.oracle.persona.Personagem;
 
-public abstract class Inimigo extends personagem {
+public abstract class Inimigo extends Personagem {
 	
 	
 	
@@ -19,7 +18,7 @@ public abstract class Inimigo extends personagem {
 	
 	
 	
-	public Inimigo(racas raca) {
+	public Inimigo(RacasEnum raca) {
 		switch(raca) {
 		case ZUMBI:
 			System.out.println("Raça: Zumbi");

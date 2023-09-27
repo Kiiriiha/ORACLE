@@ -1,9 +1,11 @@
 package br.com.oracle.persona;
 
-public abstract class personagem {
+import br.com.oracle.persona.inimigos.RacasEnum;
+
+public abstract class Personagem {
 
 	private String nome;
-	private racas raca;
+	private RacasEnum raca;
 	private int pontosDeVida;
 	private int forca;
 	private int magia;
@@ -11,7 +13,9 @@ public abstract class personagem {
 	private int defesa;
 	private int nivel;
 
-	public personagem() {}
+	
+	
+	public Personagem() {}
 
 	
 	
@@ -39,11 +43,11 @@ public abstract class personagem {
 		this.nome = nome;
 	}
 
-	public racas getRaca() {
+	public RacasEnum getRaca() {
 		return raca;
 	}
 
-	public void setRaca(racas raca) {
+	public void setRaca(RacasEnum raca) {
 		this.raca = raca;
 	}
 
