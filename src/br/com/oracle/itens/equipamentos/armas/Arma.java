@@ -9,4 +9,12 @@ private TipoArmaEnum tipoArma;
 		this.tipoArma = tipoArma;
 	}
 
+	public TipoArmaEnum getTipoArma() {
+		return tipoArma;
+	}
+
+	public void setTipoArma(TipoArmaEnum tipoArma) {
+		this.tipoArma = tipoArma;
+	}
+
 }

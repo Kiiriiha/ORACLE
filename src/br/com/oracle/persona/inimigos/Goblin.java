@@ -4,8 +4,8 @@ public class Goblin extends Inimigo {
 
 	
 	public Goblin() {
-		System.out.println("Goblin criado");
-	}
+		super(RacasEnum.GOBLIN);	}
+
 	
 	@Override
 	public void atacar() {

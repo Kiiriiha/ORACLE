@@ -1,6 +1,6 @@
 package br.com.oracle.persona.jogador;
 
-
+import br.com.oracle.atributos.personagem.jogador.AtributosJogador;
 import br.com.oracle.itens.equipamentos.armadura.Botas;
 import br.com.oracle.itens.equipamentos.armadura.Elmo;
 import br.com.oracle.itens.equipamentos.armadura.Luvas;
@@ -10,39 +10,29 @@ import br.com.oracle.persona.jogador.classes.TipoClasseEnum;
 
 public abstract class Jogador extends Personagem {
 
-	private int experienciaAtual;
-	private int experienciaProximoNivel;
+	public Jogador(TipoClasseEnum classe) {
+		this.classe = classe;
+	}
+
+	public Jogador() {
+	}
+
+	private AtributosJogador atributos;
+	private TipoClasseEnum classe;
 
 	private Elmo elmo;
 	private Peitoral peitoral;
 	private Luvas luvas;
 	private Botas botas;
 
-	private  TipoClasseEnum classe;
-	
-	
-	public Jogador() {
-	}
-	
-	public Jogador(TipoClasseEnum classe) {
-		this.classe = classe;
-	}
-	
-	
-	public int getExperienciaAtual() {
-		return experienciaAtual;
+
+
+	public Peitoral getPeitoral() {
+		return peitoral;
 	}
 
-	public void setExperienciaAtual(int experienciaAtual) {
-		this.experienciaAtual = experienciaAtual;
-	}
-
-	public int getExperienciaProximoNivel() {
-		return experienciaProximoNivel;
-	}
-
-	public void setExperienciaProximoNivel(int experienciaProximoNivel) {
-		this.experienciaProximoNivel = experienciaProximoNivel;
+	public void setPeitoral(Peitoral peitoral) {
+		this.peitoral = peitoral;
 	}
 
 	public Elmo getElmo() {
@@ -51,14 +41,6 @@ public abstract class Jogador extends Personagem {
 
 	public void setElmo(Elmo elmo) {
 		this.elmo = elmo;
-	}
-
-	public Armadura getArmadura() {
-		return armadura;
-	}
-
-	public void setArmadura(Armadura armadura) {
-		this.armadura = armadura;
 	}
 
 	public Luvas getLuvas() {
@@ -85,13 +67,7 @@ public abstract class Jogador extends Personagem {
 		this.classe = classe;
 	}
 
-
-
-	@Override
-	public void exibirNome() {
-		System.out.println("Personagem " + this.retornarNome());
-
-	}
+	
 
 	@Override
 	public void atacar() {
@@ -106,6 +82,14 @@ public abstract class Jogador extends Personagem {
 	@Override
 	public void usarMagia() {
 
+	}
+
+	public AtributosJogador getAtributos() {
+		return atributos;
+	}
+
+	public void setAtributos(AtributosJogador atributos) {
+		this.atributos = atributos;
 	}
 
 }

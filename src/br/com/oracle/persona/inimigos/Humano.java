@@ -4,8 +4,7 @@ public class Humano extends Inimigo {
 
 	
 	public Humano() {
-		System.out.println("Humano criado");
-	}
+		super(RacasEnum.HUMANO);	}
 	
 	@Override
 	public void atacar() {

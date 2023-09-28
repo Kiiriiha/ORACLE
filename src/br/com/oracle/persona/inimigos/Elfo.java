@@ -4,8 +4,7 @@ public class Elfo extends Inimigo {
 
 	
 	public Elfo() {
-		System.out.println("Elfo criado");
-	}
+super(RacasEnum.ELFO);	}
 	
 	@Override
 	public void atacar() {

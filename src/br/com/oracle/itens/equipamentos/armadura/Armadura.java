@@ -9,5 +9,13 @@ public abstract class Armadura extends Equipamento {
 	public Armadura(TipoArmaduraEnum tipoArmadura) {
 		this.tipoArmadura = tipoArmadura;
 	}
+
+	public TipoArmaduraEnum getTipoArmadura() {
+		return tipoArmadura;
+	}
+
+	public void setTipoArmadura(TipoArmaduraEnum tipoArmadura) {
+		this.tipoArmadura = tipoArmadura;
+	}
 	
 }

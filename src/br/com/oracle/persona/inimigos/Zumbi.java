@@ -3,8 +3,7 @@ package br.com.oracle.persona.inimigos;
 public class Zumbi extends Inimigo {
 
 	public Zumbi() {
-		System.out.println("Zumbi criado");
-	}
+		super(RacasEnum.ZUMBI);	}
 	
 	
 	@Override
