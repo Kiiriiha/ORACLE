@@ -4,6 +4,7 @@ package br.com.oracle.persona.jogador;
 import br.com.oracle.itens.equipamentos.armadura.Botas;
 import br.com.oracle.itens.equipamentos.armadura.Elmo;
 import br.com.oracle.itens.equipamentos.armadura.Luvas;
+import br.com.oracle.itens.equipamentos.armadura.Peitoral;
 import br.com.oracle.persona.Personagem;
 import br.com.oracle.persona.jogador.classes.TipoClasseEnum;
 
@@ -13,7 +14,7 @@ public abstract class Jogador extends Personagem {
 	private int experienciaProximoNivel;
 
 	private Elmo elmo;
-	private Armadura armadura;
+	private Peitoral peitoral;
 	private Luvas luvas;
 	private Botas botas;
 

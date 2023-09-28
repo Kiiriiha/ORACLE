@@ -3,7 +3,6 @@ package br.com.oracle.itens.equipamentos;
 public abstract class Equipamento {
 	
 	private String nmEquipamento;
-	private TipoEquipEnum tipoEquipamento;
 	private int forca;
 	private int magia;
 	private int velocidade;
@@ -18,12 +17,7 @@ public abstract class Equipamento {
 	public void setNmEquipamento(String nmEquipamento) {
 		this.nmEquipamento = nmEquipamento;
 	}
-	public TipoEquipEnum getTipoEquipamento() {
-		return tipoEquipamento;
-	}
-	public void setTipoEquipamento(TipoEquipEnum tipoEquipamento) {
-		this.tipoEquipamento = tipoEquipamento;
-	}
+	
 	public int getForca() {
 		return forca;
 	}
